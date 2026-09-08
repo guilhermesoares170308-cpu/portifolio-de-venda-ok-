@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Fotografia — Mais que fotos, histórias reais</title>
+<meta name="description" content="Alex Fotografia — ensaios, casamentos e eventos em Foz do Iguaçu e região. Registrando pessoas, momentos e sentimentos que realmente importam.">
+<meta name="theme-color" content="#0a0908">
+<link rel="canonical" href="https://www.alexfotografia.com/">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<!-- Prévia ao compartilhar o link (WhatsApp, Instagram, Facebook, LinkedIn).
+     IMPORTANTE: og:image e og:url precisam do endereço completo do site.
+     Ao publicar, troque https://www.alexfotografia.com pelo seu domínio real
+     nas quatro linhas abaixo e na tag <link rel="canonical"> acima. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Alex Fotografia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://www.alexfotografia.com/">
+<meta property="og:title" content="Alex Fotografia — Mais que fotos, histórias reais">
+<meta property="og:description" content="Ensaios, casamentos e eventos em Foz do Iguaçu e região. Registrando pessoas, momentos e sentimentos que realmente importam.">
+<meta property="og:image" content="https://www.alexfotografia.com/assets/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fotógrafo em estúdio com a câmera em mãos e a marca Alex Fotografia">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alex Fotografia — Mais que fotos, histórias reais">
+<meta name="twitter:description" content="Ensaios, casamentos e eventos em Foz do Iguaçu e região.">
+<meta name="twitter:image" content="https://www.alexfotografia.com/assets/compartilhar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --preto:#0a0908;
+  --preto-2:#100e0d;
+  --carvao:#161311;
+  --linha:rgba(201,162,77,.28);
+  --linha-suave:rgba(255,255,255,.08);
+  --ouro:#c9a24d;
+  --ouro-claro:#e8c88a;
+  --ouro-suave:#d9b978;
+  --branco:#f4f1ec;
+  --cinza:#a9a29a;
+  --cinza-2:#7d766e;
+  --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans:'Jost', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --script:'Dancing Script', cursive;
+  --mono:'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --carvao-claro:#444345;
+  --gelo:#e2e2e2;
+  --max:1240px;
+  --raio:2px;
+  /* formato dos botões: 999px = pílula. Troque aqui para mudar todos de uma vez
+     (0 volta ao canto reto, 6px dá um canto suave) */
+  --raio-btn:999px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--preto);
+  color:var(--branco);
+  font-family:var(--sans);
+  font-weight:300;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--ouro);color:#0a0908}
+
+/* ---------- utilitarios ---------- */
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{
+  font-size:12px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--ouro);font-weight:400;
+}
+.risco{width:72px;height:1px;background:var(--ouro);opacity:.75;margin:16px 0 0}
+.risco.centro{margin:16px auto 0}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:.005em}
+h2{font-size:clamp(2.4rem,5.2vw,4rem)}
+.dourado{color:var(--ouro-claro)}
+.texto{color:var(--cinza);font-size:1.02rem;line-height:1.85}
+.centro{text-align:center}
+section{position:relative}
+.sec{padding:130px 0}
+
+/* botoes */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:14px;
+  padding:17px 38px;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;
+  font-weight:400;border:1px solid var(--ouro);color:var(--ouro-claro);
+  background:transparent;transition:.4s cubic-bezier(.22,.61,.36,1);
+  position:relative;overflow:hidden;border-radius:var(--raio-btn);
+}
+.btn span{position:relative;z-index:2;display:inline-flex;align-items:center;gap:14px}
+.btn::before{
+  content:"";position:absolute;inset:0;background:var(--ouro);
+  transform:translateY(101%);transition:transform .45s cubic-bezier(.22,.61,.36,1);z-index:1;
+}
+.btn:hover::before{transform:translateY(0)}
+.btn:hover{color:#0a0908}
+.btn .seta{transition:transform .4s}
+.btn:hover .seta{transform:translateX(6px)}
+.btn-cheio{background:var(--ouro);color:#12100e;border-color:var(--ouro);font-weight:500}
+.btn-cheio::before{background:var(--ouro-claro)}
+.btn-cheio:hover{color:#12100e}
+
+/* ---------- brilho dourado dos botões ----------
+   Três camadas: um reflexo que varre o botão, um halo que responde ao
+   passar do mouse e um anel que dispara no clique. */
+@keyframes brilho-varre{
+  0%      {transform:translateX(-160%) skewX(-18deg)}
+  60%,100%{transform:translateX(320%)  skewX(-18deg)}
+}
+@keyframes brilho-respira{
+  0%,100%{box-shadow:0 0 0 1px rgba(201,162,77,.10), 0 0 18px -7px rgba(201,162,77,.50)}
+  50%    {box-shadow:0 0 0 1px rgba(201,162,77,.24), 0 0 30px -5px rgba(201,162,77,.85)}
+}
+@keyframes brilho-clique{
+  0%  {box-shadow:0 0 0 0 rgba(201,162,77,.55), 0 0 26px -4px rgba(201,162,77,.85)}
+  100%{box-shadow:0 0 0 16px rgba(201,162,77,0), 0 0 26px -6px rgba(201,162,77,.30)}
+}
+
+.btn::after,.btn-cena::after{
+  content:"";position:absolute;top:0;bottom:0;left:0;width:36%;z-index:1;
+  pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(232,200,138,.28),transparent);
+  animation:brilho-varre 5.5s ease-in-out infinite;
+}
+.btn-cheio::after{background:linear-gradient(90deg,transparent,rgba(255,250,240,.42),transparent)}
+.btn:hover,.btn-cena:hover{box-shadow:0 0 0 1px rgba(201,162,77,.22), 0 0 30px -5px rgba(201,162,77,.8)}
+
+/* chamadas principais ganham o halo pulsando */
+.btn-brilho{animation:brilho-respira 3.6s ease-in-out infinite}
+
+/* pulso no clique */
+.btn[data-state="clicked"],.btn-cena[data-state="clicked"]{
+  animation:brilho-clique .42s ease-out;
+  transform:scale(.975);
+}
+
+/* o vão de 14px do span foi pensado para a seta; a faísca pede menos espaço,
+   senão fica solta na beirada do botão */
+.btn .com-faisca{gap:9px}
+.faisca{display:inline-flex;flex:0 0 auto;margin:0}
+.faisca svg{
+  display:block;width:15px;height:15px;
+  stroke:currentColor;fill:none;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+}
+
+/* o botão da cena é escuro: o brilho fica mais contido */
+.btn-cena{position:relative;overflow:hidden}
+.btn-cena span{position:relative;z-index:2;display:inline-flex;align-items:center;gap:14px}
+.btn-cena::after{width:32%;background:linear-gradient(90deg,transparent,rgba(232,200,138,.20),transparent)}
+
+@media (prefers-reduced-motion:reduce){
+  .btn::after,.btn-cena::after,.btn-brilho{animation:none}
+}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:90;
+  padding:26px 0;
+  /* só o que deve animar: com "transition:.45s" (= all) o z-index e o fundo
+     também entravam na animação e ficavam presos no valor inicial */
+  transition:padding .45s ease,background-color .45s ease,border-color .45s ease;
+  border-bottom:1px solid transparent;
+}
+header.solido{
+  background:rgba(10,9,8,.92);backdrop-filter:blur(14px);
+  padding:16px 0;border-bottom:1px solid var(--linha-suave);
+}
+.barra{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{display:flex;flex-direction:column;line-height:1}
+.logo b{
+  font-family:var(--serif);font-weight:500;font-size:1.55rem;
+  letter-spacing:.34em;color:var(--branco);
+}
+.logo b i{font-style:normal;color:var(--ouro)}
+.logo small{
+  font-size:8.5px;letter-spacing:.52em;color:var(--cinza-2);
+  margin-top:6px;padding-left:4px;
+}
+.menu{display:flex;align-items:center;gap:34px}
+/* o :not() é necessário: "Agendar ensaio" é um botão, não um item de menu.
+   Sem ele, .menu a vence .btn na especificidade e zera o padding do botão. */
+.menu a:not(.header-cta){
+  font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--cinza);
+  position:relative;padding:6px 0;transition:color .3s;
+}
+.menu a:not(.header-cta)::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:var(--ouro);transition:width .4s;
+}
+.menu a:not(.header-cta):hover,.menu a:not(.header-cta).ativo{color:var(--ouro-claro)}
+.menu a:not(.header-cta):hover::after,.menu a:not(.header-cta).ativo::after{width:100%}
+.header-cta{padding:12px 24px;font-size:10.5px;letter-spacing:.18em}
+.burger{display:none;width:34px;height:24px;position:relative;z-index:120}
+.burger i{
+  position:absolute;left:0;height:1px;width:100%;background:var(--branco);
+  transition:.35s ease;
+}
+.burger i:nth-child(1){top:2px}
+.burger i:nth-child(2){top:11px}
+.burger i:nth-child(3){top:20px}
+body.menu-aberto .burger i:nth-child(1){top:11px;transform:rotate(45deg);background:var(--ouro)}
+body.menu-aberto .burger i:nth-child(2){opacity:0}
+body.menu-aberto .burger i:nth-child(3){top:11px;transform:rotate(-45deg);background:var(--ouro)}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:url('assets/hero.jpg') center right/cover no-repeat;
+}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(10,9,8,.95) 0%,rgba(10,9,8,.82) 38%,rgba(10,9,8,.28) 62%,rgba(10,9,8,.45) 100%);
+}
+.hero .wrap{position:relative;z-index:3;padding-top:120px;padding-bottom:80px}
+.hero-txt{max-width:640px}
+.hero h1{font-size:clamp(3rem,6.6vw,5.4rem);margin:26px 0 4px}
+.hero .assinatura{
+  font-family:var(--script);font-size:clamp(1.6rem,3vw,2.2rem);
+  color:var(--ouro-suave);margin:6px 0 26px;
+}
+.hero p{max-width:500px;color:var(--cinza)}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:18px;margin-top:44px}
+.hero-dados{
+  display:flex;flex-wrap:wrap;gap:52px;margin-top:66px;
+  padding-top:34px;border-top:1px solid var(--linha-suave);max-width:560px;
+}
+.dado b{
+  display:block;font-family:var(--serif);font-size:2.5rem;color:var(--ouro-claro);
+  font-weight:500;line-height:1;
+}
+.dado span{
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza-2);
+  display:block;margin-top:10px;
+}
+.scroll-dica{
+  position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:4;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--cinza-2);
+}
+.scroll-dica i{display:block;width:1px;height:52px;background:linear-gradient(var(--ouro),transparent);animation:desce 2.2s infinite}
+@keyframes desce{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- cenas em tela cheia (entre as seções) ---------- */
+.cena{
+  position:relative;display:flex;align-items:flex-end;overflow:hidden;
+  min-height:100vh;min-height:100svh;background:var(--preto);
+}
+.cena-arte{position:absolute;inset:0;overflow:hidden;z-index:0}
+.cena-arte::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(10,9,8,.88) 0%,rgba(10,9,8,.56) 38%,rgba(10,9,8,.08) 72%,rgba(10,9,8,.26) 100%),
+    linear-gradient(to top,rgba(10,9,8,.9) 0%,rgba(10,9,8,.1) 48%,rgba(10,9,8,.5) 100%);
+}
+/* véu no canto inferior esquerdo: garante a leitura do texto sobre qualquer foto.
+   fica na própria seção (e não na arte) para não ser espelhado junto */
+.cena::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:radial-gradient(115% 105% at 0% 100%,rgba(10,9,8,.94) 0%,rgba(10,9,8,.72) 30%,rgba(10,9,8,.3) 55%,transparent 76%);
+}
+/* grão de filme: esconde o serrilhado e dá textura de cinema */
+.cena-grao{
+  position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.06;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23r)'/%3E%3C/svg%3E");
+}
+.cena .wrap{
+  position:relative;z-index:3;
+  padding-top:120px;padding-bottom:clamp(56px,9vh,116px);
+  padding-left:clamp(28px,5vw,80px);
+  /* o texto não pode capturar o arrasto da parede que está atrás */
+  pointer-events:none;
+}
+.cena .wrap a,.cena .wrap button{pointer-events:auto}
+.cena-dica{
+  position:absolute;right:clamp(24px,4vw,60px);bottom:clamp(28px,5vh,52px);z-index:3;
+  display:flex;align-items:center;gap:10px;pointer-events:none;
+  font-family:var(--mono);font-size:10px;letter-spacing:-.02em;text-transform:uppercase;
+  color:rgba(244,241,236,.5);
+}
+.cena-dica svg{stroke:var(--ouro);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.cena-cap{
+  display:flex;align-items:center;gap:14px;margin-bottom:26px;
+  font-family:var(--mono);font-size:11px;letter-spacing:-.02em;
+  text-transform:uppercase;color:var(--ouro-claro);
+}
+.cena-cap::before{content:"";width:40px;height:1px;background:var(--ouro)}
+.cena-titulo{
+  font-family:var(--serif);font-weight:400;color:var(--branco);
+  font-size:clamp(2.9rem,8.4vw,5rem);line-height:.78;letter-spacing:0;
+}
+.cena-linha{display:block;width:max-content;max-width:100%}
+.cena-linha+.cena-linha{margin-top:16px}
+/* marca de sublinhado: vai da esquerda até ~40% da largura da própria linha */
+.cena-linha::after{
+  content:"";display:block;width:40%;height:1px;margin-top:12px;
+  background:var(--ouro);opacity:.9;
+}
+.cena-linha em{font-style:normal;color:var(--ouro-claro)}
+.cena-apoio{
+  font-family:var(--mono);font-size:12px;line-height:1.3;letter-spacing:-.02em;
+  color:var(--cinza);max-width:34ch;margin-top:34px;
+}
+.btn-cena{
+  display:inline-flex;align-items:center;gap:14px;margin-top:26px;
+  padding:14px 26px;border-radius:var(--raio-btn);
+  background:var(--carvao-claro);border:1px solid rgba(226,226,226,.45);
+  font-family:var(--mono);font-size:11px;letter-spacing:-.02em;text-transform:uppercase;
+  color:var(--branco);transition:background .35s ease,color .35s ease,border-color .35s ease;
+}
+.btn-cena:hover{background:var(--ouro);border-color:var(--ouro);color:#12100e}
+.btn-cena .seta{transition:transform .35s}
+.btn-cena:hover .seta{transform:translateX(5px)}
+/* telas baixas (notebook pequeno, celular deitado): a cena cabe em um quadro só */
+@media (max-height:720px){
+  .cena .wrap{padding-top:96px;padding-bottom:44px}
+  .cena-titulo{font-size:clamp(2.1rem,5.6vw,3.4rem)}
+  .cena-cap{margin-bottom:18px}
+  .cena-linha+.cena-linha{margin-top:11px}
+  .cena-linha::after{margin-top:8px}
+  .cena-apoio{margin-top:22px}
+  .btn-cena{margin-top:20px}
+}
+
+/* ---------- sobre ---------- */
+.sobre{background:var(--preto-2)}
+.sobre-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.sobre h2{margin:22px 0 0}
+.sobre .risco-baixo{margin:26px 0 34px}
+.sobre .texto p+p{margin-top:22px}
+.sobre .frase{
+  font-family:var(--script);font-size:2rem;color:var(--ouro-suave);
+  margin-top:42px;display:inline-block;
+}
+.sobre .frase::after{content:"";display:block;height:1px;background:var(--ouro);opacity:.6;margin-top:4px}
+.sobre-foto{position:relative}
+.sobre-foto img{width:100%;height:660px;object-fit:cover;object-position:center 20%;filter:grayscale(.15)}
+.sobre-foto::before{
+  content:"";position:absolute;inset:-16px -16px 16px 16px;border:1px solid var(--linha);z-index:-1;
+}
+.sobre-selo{
+  position:absolute;left:-34px;bottom:44px;background:var(--preto);
+  border:1px solid var(--linha);padding:22px 28px;text-align:center;
+}
+.sobre-selo b{display:block;font-family:var(--serif);font-size:2.2rem;color:var(--ouro-claro);line-height:1}
+.sobre-selo span{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--cinza-2)}
+
+/* ---------- portfolio ---------- */
+.portfolio{background:var(--preto)}
+.portfolio .topo{max-width:760px;margin:0 auto 46px}
+.portfolio h2{margin:22px 0 20px}
+
+/* cards expansivos de categoria */
+.cats{display:flex;gap:12px;height:520px;width:100%}
+.cats[hidden]{display:none}
+.cat{
+  position:relative;flex:1 1 0;min-width:86px;overflow:hidden;cursor:pointer;
+  border:1px solid var(--linha-suave);background:var(--carvao);outline:none;
+  transition:flex-grow .7s cubic-bezier(.22,.61,.36,1),border-color .45s;
+}
+.cat.ativo{flex-grow:5;border-color:var(--linha)}
+.cat:focus-visible{border-color:var(--ouro)}
+.cat img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) brightness(.5);transform:scale(1.14);
+  transition:filter .7s ease,transform .9s cubic-bezier(.22,.61,.36,1);
+}
+.cat.ativo img{filter:grayscale(0) brightness(1);transform:scale(1)}
+.cat::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(10,9,8,.92),rgba(10,9,8,.42) 52%,rgba(10,9,8,.12));
+}
+.cat-vertical{
+  position:absolute;left:32px;bottom:30px;z-index:3;
+  transform-origin:left bottom;transform:rotate(-90deg);white-space:nowrap;
+  font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--branco);
+  transition:opacity .35s ease;
+}
+.cat.ativo .cat-vertical{opacity:0}
+.cat-conteudo{
+  position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+  justify-content:flex-end;gap:12px;padding:34px;
+  width:100%;min-width:420px;
+}
+.cat-conteudo>*{opacity:0;transform:translateY(16px);transition:.5s cubic-bezier(.22,.61,.36,1)}
+.cat.ativo .cat-icone{opacity:1;transform:none;transition-delay:.12s}
+.cat.ativo h3{opacity:1;transform:none;transition-delay:.2s}
+.cat.ativo p{opacity:1;transform:none;transition-delay:.28s}
+.cat.ativo .cat-link{opacity:1;transform:none;transition-delay:.36s}
+.cat-icone svg{stroke:var(--ouro);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.cat h3{font-family:var(--serif);font-size:2.1rem;font-weight:500;color:var(--branco)}
+.cat p{max-width:340px;color:var(--cinza);font-size:.97rem;line-height:1.7}
+.cat-link{
+  display:inline-flex;align-items:center;gap:12px;margin-top:6px;
+  font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro-claro);
+}
+.cat-link::before{content:"";width:34px;height:1px;background:var(--ouro)}
+.cat .seta{transition:transform .4s}
+.cat:hover .seta{transform:translateX(6px)}
+
+/* galeria da categoria */
+.galeria[hidden]{display:none}
+.galeria-topo{
+  display:flex;align-items:center;justify-content:space-between;gap:26px;
+  flex-wrap:wrap;margin-bottom:34px;padding-bottom:22px;
+  border-bottom:1px solid var(--linha-suave);
+}
+.voltar{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--cinza);
+  transition:color .3s;
+}
+.voltar svg{stroke:var(--ouro);fill:none;stroke-width:1.4;transition:transform .35s}
+.voltar:hover{color:var(--ouro-claro)}
+.voltar:hover svg{transform:translateX(-5px)}
+.galeria-titulo{display:flex;align-items:baseline;gap:16px}
+.galeria-titulo b{font-family:var(--serif);font-size:1.9rem;font-weight:500;color:var(--branco)}
+.galeria-titulo span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro-claro)}
+/* parede infinita arrastável */
+.parede{
+  position:relative;height:min(74vh,660px);overflow:hidden;
+  background:var(--carvao);border:1px solid var(--linha-suave);
+  cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;
+}
+.parede:active{cursor:grabbing}
+.parede::before,.parede::after{
+  content:"";position:absolute;left:0;right:0;height:88px;z-index:3;pointer-events:none;
+}
+.parede::before{top:0;background:linear-gradient(rgba(22,19,17,.95),transparent)}
+.parede::after{bottom:0;background:linear-gradient(to top,rgba(22,19,17,.95),transparent)}
+.parede-mover{
+  display:grid;grid-template-columns:repeat(2,max-content);
+  width:max-content;will-change:transform;
+}
+.parede-bloco{
+  display:grid;grid-template-columns:repeat(var(--cols,4),max-content);
+  column-gap:56px;padding:0 28px 112px;
+}
+.parede-item{
+  position:relative;width:236px;height:340px;overflow:hidden;
+  border:1px solid var(--linha-suave);background:var(--preto-2);
+  /* rotação e escala compostas: a entrada não briga com a inclinação polaroid */
+  --rot:0deg;--esc:.3;
+  opacity:0;transform:rotate(var(--rot)) scale(var(--esc));
+}
+.parede-item:nth-child(even){margin-top:142px}
+.parede-item.entrou{
+  --esc:1;opacity:1;
+  transition:opacity 1s cubic-bezier(.18,.71,.11,1),transform 1s cubic-bezier(.18,.71,.11,1);
+}
+.parede-item img{
+  width:100%;height:100%;object-fit:cover;pointer-events:none;
+  filter:brightness(.86);transition:filter .5s ease,transform .9s cubic-bezier(.22,.61,.36,1);
+}
+.parede-item::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(10,9,8,.9),rgba(10,9,8,.05) 58%);
+  opacity:0;transition:opacity .45s;
+}
+.parede-item:hover{border-color:var(--linha)}
+.parede-item:hover img{filter:brightness(1);transform:scale(1.05)}
+.parede-item:hover::after{opacity:1}
+.parede-item figcaption{
+  position:absolute;left:18px;right:18px;bottom:16px;z-index:2;
+  opacity:0;transform:translateY(12px);transition:.45s cubic-bezier(.22,.61,.36,1);
+}
+.parede-item:hover figcaption{opacity:1;transform:none}
+.parede-item figcaption span{
+  font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro-claro);
+}
+.parede-item figcaption b{
+  display:block;font-family:var(--serif);font-size:1.18rem;font-weight:500;color:var(--branco);
+}
+/* parede das cenas em tela cheia: ocupa a seção inteira e usa moldura polaroid.
+   touch-action pan-y = no celular o dedo na vertical rola a página normalmente
+   e só o movimento horizontal arrasta a parede (nunca prende o visitante) */
+.parede-cena{
+  position:absolute;inset:0;height:100%;border:0;background:transparent;
+  touch-action:pan-y;
+}
+.parede-cena .parede-bloco{column-gap:42px;padding:0 21px 88px}
+.parede-cena .parede-item{
+  width:230px;height:338px;
+  border:10px solid #f2efe9;border-bottom-width:30px;background:#f2efe9;
+}
+.parede-cena .parede-item:nth-child(odd){--rot:-2deg}
+.parede-cena .parede-item:nth-child(even){--rot:3deg;margin-top:138px}
+.parede-cena .parede-item:hover{--rot:0deg;border-color:#fff}
+/* o endireitar no hover é rápido; a entrada continua lenta */
+.parede-cena .parede-item.entrou:hover{transition:transform .35s ease-out,border-color .35s ease}
+.parede-cena .parede-item img{filter:brightness(.94)}
+.parede-cena .parede-item:hover img{filter:brightness(1);transform:none}
+
+/* ---------- esteira infinita de fotos da categoria ----------
+   O trilho contém duas metades idênticas, então deslizar -50% devolve
+   a fita exatamente ao ponto de partida: o laço não tem emenda. */
+.esteira{
+  position:relative;width:100%;overflow:hidden;padding:10px 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);
+}
+.esteira-trilho{
+  display:flex;gap:24px;width:max-content;
+  animation:esteira-anda var(--dur,20s) linear infinite;
+}
+@keyframes esteira-anda{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+/* parar sob o cursor deixa a foto clicável */
+.esteira:hover .esteira-trilho{animation-play-state:paused}
+.esteira-item{
+  flex:0 0 auto;position:relative;width:320px;height:320px;
+  overflow:hidden;border-radius:2px;cursor:pointer;
+  border:1px solid var(--linha-suave);background:var(--carvao);
+  transition:transform .3s ease,filter .3s ease,border-color .3s ease;
+}
+.esteira-item:hover{transform:scale(1.05);filter:brightness(1.1);border-color:var(--linha)}
+.esteira-item img{width:100%;height:100%;object-fit:cover;display:block}
+
+@media (max-width:1023px){
+  .esteira-trilho{gap:20px}
+  .esteira-item{width:256px;height:256px}
+}
+@media (max-width:767px){
+  .esteira-trilho{gap:16px}
+  .esteira-item{width:192px;height:192px}
+}
+@media (prefers-reduced-motion:reduce){
+  .esteira-trilho{animation:none}
+}
+
+.parede-dica{
+  display:flex;align-items:center;justify-content:center;gap:11px;margin-top:20px;
+  font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--cinza-2);
+}
+.parede-dica svg{stroke:var(--ouro);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* grade estática: fica como alternativa sem JavaScript */
+.grade{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:16px;
+  margin:0 auto;
+}
+.grade[hidden]{display:none}
+.grade .foto{aspect-ratio:4/3}
+.foto{
+  position:relative;overflow:hidden;border:1px solid var(--linha-suave);
+  cursor:pointer;background:var(--carvao);
+  transition:opacity .45s ease,transform .45s ease,border-color .4s;
+}
+.foto img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,.61,.36,1)}
+.foto::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(10,9,8,.88),rgba(10,9,8,.05) 55%);
+  opacity:0;transition:opacity .45s;
+}
+.foto:hover::after{opacity:1}
+.foto:hover img{transform:scale(1.07)}
+.foto:hover{border-color:var(--linha)}
+.foto-info{
+  position:absolute;left:22px;right:22px;bottom:18px;z-index:2;
+  opacity:0;transform:translateY(14px);transition:.45s cubic-bezier(.22,.61,.36,1);
+}
+.foto:hover .foto-info{opacity:1;transform:translateY(0)}
+.foto-info b{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:500}
+.foto-info span{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro-claro)}
+.foto.oculta{display:none}
+.portfolio .acao{margin-top:52px}
+
+/* ---------- planos ---------- */
+.planos{background:var(--preto-2)}
+.planos .topo{max-width:720px;margin:0 auto 60px}
+.planos h2{margin:22px 0 20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;align-items:start}
+.card{
+  background:var(--carvao);border:1px solid var(--linha-suave);
+  display:flex;flex-direction:column;position:relative;
+  transition:.5s cubic-bezier(.22,.61,.36,1);
+}
+.card:hover{transform:translateY(-8px);border-color:var(--linha)}
+.card-foto{height:178px;overflow:hidden;position:relative}
+.card-foto img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,.61,.36,1)}
+.card:hover .card-foto img{transform:scale(1.06)}
+.card-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,var(--carvao),transparent 62%)}
+.card-corpo{padding:30px 32px 34px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.9rem;font-weight:500}
+.card .sub{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cinza);margin-top:6px}
+.card .risco-card{width:64px;height:1px;background:var(--ouro);opacity:.6;margin:20px 0}
+.preco{font-family:var(--serif);font-size:2.9rem;color:var(--ouro-claro);font-weight:500;line-height:1}
+.card ul{list-style:none;margin:26px 0 30px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card li{display:flex;gap:13px;align-items:flex-start;font-size:.96rem;color:var(--cinza)}
+.card li svg{flex:0 0 17px;margin-top:4px;stroke:var(--ouro);fill:none;stroke-width:1.3}
+.card .btn{width:100%}
+.destaque{border-color:var(--linha);box-shadow:0 24px 70px rgba(0,0,0,.55)}
+.destaque .card-foto{height:200px}
+.tag{
+  position:absolute;top:0;right:0;z-index:3;background:var(--ouro);color:#12100e;
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+  padding:8px 18px;
+}
+.planos-rodape{
+  display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:26px;
+  margin-top:56px;
+}
+.planos-rodape p{display:flex;align-items:center;gap:14px;color:var(--cinza);font-size:.97rem}
+.planos-rodape svg{stroke:var(--ouro);fill:none;stroke-width:1.3;flex:0 0 22px}
+
+/* ---------- faq ---------- */
+.faq{background:var(--preto)}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+.faq h2{margin:22px 0 28px}
+.faq .btn{margin-top:36px}
+.lista-faq{display:flex;flex-direction:column;gap:14px}
+.item{border:1px solid var(--linha-suave);background:var(--preto-2);transition:border-color .4s}
+.item:hover{border-color:var(--linha)}
+.item.aberto{border-color:var(--linha)}
+.pergunta{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:26px;
+  padding:26px 30px;text-align:left;font-family:var(--serif);font-size:1.42rem;
+  color:var(--branco);transition:color .3s;
+}
+.pergunta:hover{color:var(--ouro-claro)}
+.mais{position:relative;flex:0 0 16px;height:16px}
+.mais i{position:absolute;background:var(--ouro);transition:.4s cubic-bezier(.22,.61,.36,1)}
+.mais i:first-child{top:7.5px;left:0;width:16px;height:1px}
+.mais i:last-child{left:7.5px;top:0;width:1px;height:16px}
+.item.aberto .mais i:last-child{transform:rotate(90deg);opacity:0}
+.item.aberto .mais i:first-child{transform:rotate(180deg)}
+.resposta{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1)}
+.resposta p{padding:0 30px 28px;color:var(--cinza);font-size:.98rem;max-width:92%}
+.faq-base{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:40px;
+  margin-top:96px;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--cinza-2);
+}
+.faq-base div:last-child{text-align:right;color:var(--branco)}
+.faq-base i{display:block;width:80px;height:1px;background:var(--linha);margin-bottom:18px}
+.faq-base div:last-child i{margin-left:auto;width:220px}
+
+/* ---------- rodape ---------- */
+footer{background:var(--preto-2);border-top:1px solid var(--linha-suave);padding:100px 0 0}
+/* Quatro colunas com dois eixos: os títulos no topo e o corpo do texto
+   todos na mesma linha. A coluna da marca usa o logotipo como título e,
+   por isso, não repete a régua dourada das outras. */
+.rodape-grid{
+  display:grid;grid-template-columns:1.15fr .95fr 1.1fr 1.15fr;
+  column-gap:60px;row-gap:56px;align-items:start;
+}
+/* O bloco do logotipo ocupa a mesma altura que o par "título + régua" das
+   outras colunas (17px do h4 + 14 de margem + 1 da régua + 26 abaixo dela),
+   e é isso que põe o corpo das quatro colunas na mesma linha. */
+.rodape-marca{min-height:61px}
+.rodape-logo b{
+  font-family:var(--serif);font-weight:500;font-size:2.1rem;letter-spacing:.3em;
+  display:block;color:var(--branco);line-height:1;
+}
+.rodape-logo b i{font-style:normal;color:var(--ouro)}
+.rodape-logo small{
+  font-size:10px;letter-spacing:.52em;color:var(--cinza);display:block;margin-top:9px;
+}
+.rodape-logo .tagline{margin-top:0}
+.tagline{font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--cinza);line-height:2.1}
+.rodape-col h4{
+  font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--ouro);
+  font-family:var(--sans);font-weight:400;
+}
+.rodape-col h4+hr{border:0;height:1px;background:var(--ouro);opacity:.7;width:56px;margin:14px 0 26px}
+.rodape-col ul{list-style:none;display:flex;flex-direction:column;gap:13px}
+.rodape-col ul a{color:var(--cinza);transition:.3s;position:relative;display:inline-block}
+.rodape-col ul a:hover{color:var(--ouro-claro);transform:translateX(5px)}
+.contato-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
+.contato-item svg{flex:0 0 21px;margin-top:3px;stroke:var(--ouro);fill:none;stroke-width:1.3}
+.contato-item b{display:block;font-weight:400;color:var(--branco);font-size:1rem}
+.contato-item span{font-size:.88rem;color:var(--cinza-2)}
+.contato-item a:hover b{color:var(--ouro-claro)}
+.news p{color:var(--cinza);font-size:.95rem;margin-bottom:24px}
+.news form{display:flex;gap:10px}
+.news input{
+  flex:1;min-width:0;background:var(--carvao);border:1px solid var(--linha-suave);
+  padding:16px 22px;color:var(--branco);font-family:inherit;font-size:.95rem;
+  border-radius:var(--raio-btn);transition:border-color .35s;
+}
+.news input::placeholder{color:var(--cinza-2)}
+.news input:focus{outline:none;border-color:var(--ouro)}
+.news button{
+  flex:0 0 54px;height:54px;background:var(--ouro);color:#12100e;
+  display:grid;place-items:center;border-radius:50%;transition:.35s;
+}
+.news button:hover{background:var(--ouro-claro)}
+.news .aviso{font-size:.85rem;margin-top:12px;min-height:20px;color:var(--ouro-claro)}
+.news .aviso.erro{color:#e0806a}
+.citacao{
+  font-family:var(--serif);font-size:1.85rem;line-height:1.35;margin-top:44px;color:var(--branco);
+}
+.citacao+hr{border:0;height:1px;background:var(--ouro);opacity:.7;width:56px;margin-top:22px}
+.redes{display:flex;gap:16px;margin-top:34px}
+.redes a{
+  width:42px;height:42px;border:1px solid var(--linha);display:grid;place-items:center;
+  border-radius:50%;transition:.4s;
+}
+.redes a svg{stroke:var(--ouro);fill:none;stroke-width:1.4;width:19px;height:19px;transition:stroke .4s}
+.redes a:hover{background:var(--ouro);border-color:var(--ouro);transform:translateY(-4px)}
+.redes a:hover svg{stroke:#12100e}
+/* três faixas iguais: o grupo do meio fica centrado na página de verdade,
+   e não empurrado pelo tamanho dos vizinhos como acontecia no space-between */
+.rodape-base{
+  margin-top:72px;border-top:1px solid var(--linha);padding:28px 0 34px;
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:28px;
+}
+.rodape-base>:last-child{justify-self:end}
+.rodape-base small{color:var(--cinza-2);font-size:.9rem}
+.palavras{display:flex;gap:20px;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--cinza-2)}
+.palavras i{font-style:normal;color:var(--linha-suave)}
+.palavras span:nth-child(3){color:var(--ouro-suave)}
+.topo-btn{
+  display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ouro-claro);padding-left:30px;
+  border-left:1px solid var(--linha);transition:.35s;
+}
+.topo-btn svg{stroke:var(--ouro);fill:none;stroke-width:1.4;transition:transform .35s}
+.topo-btn:hover svg{transform:translateY(-5px)}
+
+/* ---------- lightbox ---------- */
+.lightbox{
+  position:fixed;inset:0;z-index:200;background:rgba(6,5,5,.97);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:.45s;backdrop-filter:blur(6px);
+}
+.lightbox.on{opacity:1;visibility:visible}
+.lightbox figure{max-width:82vw;max-height:80vh;text-align:center}
+.lightbox img{max-width:82vw;max-height:72vh;object-fit:contain;border:1px solid var(--linha)}
+.lightbox figcaption{margin-top:20px}
+.lightbox figcaption b{font-family:var(--serif);font-size:1.5rem;font-weight:500;display:block}
+.lightbox figcaption span{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--ouro-claro)}
+.lb-btn{
+  position:absolute;width:56px;height:56px;border:1px solid var(--linha);
+  display:grid;place-items:center;transition:.35s;
+}
+.lb-btn svg{stroke:var(--ouro);fill:none;stroke-width:1.3}
+.lb-btn:hover{background:var(--ouro)}
+.lb-btn:hover svg{stroke:#12100e}
+.lb-fechar{top:34px;right:34px}
+.lb-ant{left:34px;top:50%;transform:translateY(-50%)}
+.lb-prox{right:34px;top:50%;transform:translateY(-50%)}
+.lb-contador{
+  position:absolute;bottom:34px;left:50%;transform:translateX(-50%);
+  font-size:11px;letter-spacing:.24em;color:var(--cinza-2);
+}
+
+/* ---------- animacoes de entrada ---------- */
+.rev{opacity:0;transform:translateY(38px);transition:opacity .9s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1)}
+.rev.visivel{opacity:1;transform:none}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1100px){
+  .header-cta{display:none}
+  .menu{gap:24px}
+  .rodape-grid{grid-template-columns:1fr 1fr;gap:52px}
+}
+@media (max-width:980px){
+  .sec{padding:96px 0}
+  .sobre-grid,.faq-grid{grid-template-columns:1fr;gap:56px}
+  .sobre-foto{order:-1}
+  .sobre-foto img{height:480px}
+  .sobre-selo{left:auto;right:-12px}
+  .cards{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+  .grade{grid-template-columns:repeat(2,1fr)}
+  .cats{height:460px}
+  .cat-conteudo{min-width:330px;padding:28px}
+  .cat h3{font-size:1.75rem}
+}
+@media (max-width:760px){
+  .burger{display:block}
+  .menu{
+    position:fixed;inset:0;z-index:100;counter-reset:item;
+    flex-direction:column;align-items:stretch;justify-content:flex-start;
+    gap:0;padding:110px 30px 44px;overflow-y:auto;
+    background-color:#0a0908;
+    opacity:0;visibility:hidden;
+    transition:opacity .35s ease,visibility .35s ease;
+  }
+  /* lista editorial: item numerado, tipografia serifada e fio de separação */
+  .menu a:not(.header-cta){
+    display:flex;align-items:baseline;gap:18px;width:100%;
+    font-family:var(--serif);font-size:1.7rem;font-weight:400;line-height:1.15;
+    letter-spacing:0;text-transform:none;color:var(--branco);
+    padding:17px 0;border-bottom:1px solid rgba(244,241,236,.08);
+    transition:color .3s ease;
+  }
+  .menu a:not(.header-cta)::before{
+    counter-increment:item;
+    content:counter(item,decimal-leading-zero);
+    font-family:var(--mono);font-size:10px;letter-spacing:0;
+    color:var(--ouro);flex:0 0 20px;
+  }
+  /* o sublinhado deslizante é do desktop */
+  .menu a:not(.header-cta)::after{display:none}
+  .menu a.ativo{color:var(--ouro-claro)}
+  .menu .header-cta{margin-top:30px;width:100%}
+  /* camada sólida própria: o menu nunca deixa a página aparecer atrás,
+     mesmo onde o background-color do elemento não é pintado */
+  .menu::before{
+    content:"";position:fixed;inset:0;z-index:-1;background-color:#0a0908;
+  }
+  body.menu-aberto .menu{opacity:1;visibility:visible}
+  /* com o menu aberto a página não pode rolar por baixo */
+  body.menu-aberto{overflow:hidden}
+  /* garante a camada acima de qualquer coisa da página.
+     O backdrop-filter do cabeçalho rolado precisa sair enquanto o menu está
+     aberto: um elemento com backdrop-filter vira o bloco de contenção dos
+     filhos position:fixed, e o menu ficava preso na caixa do cabeçalho em
+     vez de ocupar a tela inteira. */
+  body.menu-aberto #cabecalho{
+    z-index:110;
+    backdrop-filter:none;-webkit-backdrop-filter:none;
+    background-color:transparent;border-bottom-color:transparent;
+  }
+  /* logotipo e X continuam por cima do menu */
+  .logo{z-index:120}
+  .logo,.burger{position:relative}
+  .menu .header-cta{display:inline-flex}
+  /* ----- hero no celular ----- */
+  .hero{min-height:100svh}
+  .hero .wrap{padding-top:122px;padding-bottom:58px}
+  .hero-bg::after{background:linear-gradient(180deg,rgba(10,9,8,.9) 0%,rgba(10,9,8,.75) 55%,rgba(10,9,8,.95) 100%)}
+  /* a linha de apoio encolhe junto com a tela para nunca quebrar em duas */
+  .hero .eyebrow{font-size:clamp(8px,2.5vw,10px);letter-spacing:.14em}
+  .hero h1{font-size:clamp(2.5rem,11.5vw,3.3rem);margin:20px 0 2px}
+  .hero .assinatura{font-size:1.5rem;margin:8px 0 20px}
+  .hero .texto{font-size:.95rem;line-height:1.72;max-width:33ch}
+  /* botões em largura cheia: as duas chamadas ficam do mesmo tamanho */
+  .hero-acoes{flex-direction:column;align-items:stretch;gap:12px;margin-top:32px}
+  .hero-acoes .btn{width:100%}
+  /* os três números em uma faixa só, sem sobrar um órfão na linha de baixo */
+  .hero-dados{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+    margin-top:42px;padding-top:26px;max-width:none;
+  }
+  .hero-dados .dado{padding-left:14px;border-left:1px solid var(--linha-suave)}
+  .hero-dados .dado:first-child{padding-left:0;border-left:0}
+  .dado b{font-size:1.6rem}
+  .dado span{font-size:8.5px;letter-spacing:.12em;margin-top:8px;line-height:1.55}
+  .scroll-dica{display:none}
+  .cats{flex-direction:column;height:620px;gap:10px}
+  .cat{min-width:0;min-height:64px}
+  .cat-vertical{transform:none;left:24px;bottom:auto;top:50%;margin-top:-9px}
+  .cat-conteudo{min-width:0;padding:24px;gap:9px}
+  .cat h3{font-size:1.6rem}
+  .cat p{font-size:.92rem;max-width:none}
+  .galeria-topo{margin-bottom:26px}
+  .galeria-titulo b{font-size:1.6rem}
+  .grade{grid-template-columns:1fr}
+  .parede{height:66vh}
+  .parede::before,.parede::after{height:54px}
+  .parede-bloco{column-gap:22px;padding:0 14px 62px}
+  .parede-item{width:138px;height:200px}
+  .parede-item:nth-child(even){margin-top:83px}
+  .parede-item figcaption{left:12px;right:12px;bottom:12px}
+  .parede-item figcaption b{font-size:.98rem}
+  .parede-dica{letter-spacing:.18em;font-size:9.5px}
+  .cena{min-height:88vh;min-height:88svh}
+  .cena .wrap{padding-top:100px;padding-bottom:52px}
+  .parede-cena .parede-bloco{column-gap:20px;padding:0 10px 52px}
+  .parede-cena .parede-item{width:132px;height:196px;border-width:7px;border-bottom-width:20px}
+  .parede-cena .parede-item:nth-child(even){margin-top:79px}
+  .cena-dica{bottom:16px;right:18px;font-size:9px}
+  /* no celular o rótulo com a faísca não pode quebrar em duas linhas */
+  .btn{padding:15px 24px;letter-spacing:.18em;font-size:11.5px}
+  .btn span{gap:10px}
+  .btn .com-faisca{gap:8px}
+  .faisca svg{width:14px;height:14px}
+  /* véu mais baixo: o texto continua legível e a foto aparece */
+  .cena::before{
+    background:radial-gradient(155% 62% at 0% 100%,rgba(10,9,8,.92) 0%,rgba(10,9,8,.52) 44%,transparent 80%);
+  }
+  .cena-arte::after{
+    background:
+      linear-gradient(90deg,rgba(10,9,8,.9) 0%,rgba(10,9,8,.55) 55%,rgba(10,9,8,.35) 100%),
+      linear-gradient(to top,rgba(10,9,8,.95) 0%,rgba(10,9,8,.2) 52%,rgba(10,9,8,.6) 100%);
+  }
+  .cena-cap{margin-bottom:20px;font-size:10px}
+  .cena-cap::before{width:26px}
+  .cena-linha+.cena-linha{margin-top:12px}
+  .cena-linha::after{width:52%;margin-top:9px}
+  .cena-apoio{margin-top:26px;font-size:11.5px;max-width:30ch}
+  .btn-cena{margin-top:24px;padding:13px 22px;font-size:10px}
+  .rodape-grid{grid-template-columns:1fr;gap:48px}
+  /* em coluna única não há o que alinhar: o logotipo volta a respirar */
+  .rodape-marca{min-height:0;margin-bottom:24px}
+  .rodape-base{grid-template-columns:1fr;justify-items:start;gap:22px;text-align:left}
+  .rodape-base>:last-child{justify-self:start}
+  .faq-base{flex-direction:column;align-items:flex-start;gap:26px}
+  .faq-base div:last-child{text-align:left}
+  .faq-base div:last-child i{margin-left:0}
+  .rodape-base{flex-direction:column;align-items:flex-start}
+  .topo-btn{padding-left:0;border-left:0}
+  .pergunta{font-size:1.18rem;padding:22px}
+  .resposta p{padding:0 22px 24px;max-width:100%}
+  .lb-ant{left:12px}.lb-prox{right:12px}
+  .lb-btn{width:46px;height:46px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ CABECALHO ============ -->
+<header id="cabecalho">
+  <div class="wrap barra">
+    <a href="#topo" class="logo" aria-label="Alex Fotografia — início">
+      <b>AL<i>E</i>X</b>
+      <small>FOTOGRAFIA</small>
+    </a>
+
+    <nav class="menu" id="menu">
+      <a href="#topo" class="ativo">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Perguntas</a>
+      <a href="#contato">Contato</a>
+      <a href="#" class="btn btn-brilho header-cta" data-whats="Olá! Vim pelo site e gostaria de agendar um ensaio."><span class="com-faisca">Agendar ensaio <i class="faisca" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></svg></i></span></a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-txt">
+      <p class="eyebrow rev">Fotografia em Foz do Iguaçu — PR</p>
+      <h1 class="rev">Mais que fotos,<br><span class="dourado">histórias reais.</span></h1>
+      <p class="assinatura rev">Seu momento. Nossa arte.</p>
+      <p class="texto rev">Registrando pessoas, momentos e sentimentos que realmente importam — com luz, tempo e cuidado em cada detalhe.</p>
+
+      <div class="hero-acoes rev">
+        <a href="#portfolio" class="btn btn-cheio btn-brilho"><span class="com-faisca">Ver portfólio <i class="faisca" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></svg></i></span></a>
+        <a href="#" class="btn" data-whats="Olá! Vim pelo site e gostaria de agendar um ensaio."><span>Agendar ensaio <em class="seta">&#8594;</em></span></a>
+      </div>
+
+      <div class="hero-dados rev">
+        <div class="dado"><b>+10</b><span>Anos de estrada</span></div>
+        <div class="dado"><b>+500</b><span>Histórias registradas</span></div>
+        <div class="dado"><b>72h</b><span>Prévia das fotos</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-dica"><span>Role</span><i></i></div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="sec sobre" id="sobre">
+  <div class="wrap sobre-grid">
+    <div class="rev">
+      <p class="eyebrow">Nossa história</p>
+      <div class="risco"></div>
+      <h2>Mais que fotografias,<br><span class="dourado">contamos histórias.</span></h2>
+      <div class="risco risco-baixo"></div>
+
+      <div class="texto">
+        <p>A fotografia sempre foi mais do que uma paixão, foi a forma encontrada para enxergar o mundo com mais sensibilidade e transformar momentos em memórias eternas.</p>
+        <p>Cada clique carrega propósito. Cada detalhe é pensado para revelar sentimentos, conexões e a beleza única de cada história.</p>
+        <p>Ao longo dessa jornada, o que nos move é simples: criar imagens que emocionam hoje e serão lembradas para sempre.</p>
+      </div>
+
+      <span class="frase">Seu momento. Nossa arte.</span>
+    </div>
+
+    <div class="sobre-foto rev">
+      <img src="assets/sobre.jpg" width="558" height="1024" loading="lazy" alt="Fotógrafo da Alex Fotografia em estúdio, com a câmera em mãos">
+      <div class="sobre-selo">
+        <b>+10</b>
+        <span>Anos de história</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CENA 01 ============ -->
+<section class="cena" id="cena-1">
+  <div class="cena-arte">
+    <div class="parede parede-cena"><div class="parede-mover"></div></div>
+  </div>
+  <div class="cena-grao"></div>
+  <p class="cena-dica">
+    <svg viewBox="0 0 24 24" width="14" height="14"><path d="M9 6l-3 3 3 3M15 6l3 3-3 3M6 15h12"/></svg>
+    Arraste as fotos
+  </p>
+  <div class="wrap">
+    <p class="cena-cap rev">Cap. 01 — O olhar</p>
+    <h2 class="cena-titulo rev">
+      <span class="cena-linha">Luz,</span>
+      <span class="cena-linha">tempo</span>
+      <span class="cena-linha">e <em>verdade.</em></span>
+    </h2>
+    <p class="cena-apoio rev">Tudo o que acontece antes do clique — e é isso que aparece na foto.</p>
+    <a href="#portfolio" class="btn-cena rev"><span>Ver o portfólio <em class="seta">&#8594;</em></span></a>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="sec portfolio" id="portfolio">
+  <div class="wrap">
+    <div class="topo centro rev">
+      <p class="eyebrow">Portfólio</p>
+      <div class="risco centro"></div>
+      <h2>Momentos reais,<br><span class="dourado">histórias únicas.</span></h2>
+      <p class="texto">Cada fotografia carrega um sentimento, uma história e um olhar único.<br>Conheça um pouco do meu trabalho e veja como momentos se tornam memórias.</p>
+    </div>
+
+    <!-- cards expansivos: a pessoa escolhe a categoria -->
+    <div class="cats rev" id="cats">
+
+      <article class="cat ativo" data-cat="ensaios" tabindex="0" role="button" aria-label="Ver fotos de Ensaios">
+        <img src="assets/port-3.jpg" width="359" height="172" loading="lazy" alt="Casal testa com testa contra o sol poente">
+        <span class="cat-vertical">Ensaios</span>
+        <div class="cat-conteudo">
+          <span class="cat-icone">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </span>
+          <h3>Ensaios</h3>
+          <p>Casais, gestantes e retratos que revelam quem você é, no seu tempo e na sua luz.</p>
+          <span class="cat-link">Ver fotos <em class="seta">&#8594;</em></span>
+        </div>
+      </article>
+
+      <article class="cat" data-cat="casamentos" tabindex="0" role="button" aria-label="Ver fotos de Casamentos">
+        <img src="assets/port-1.jpg" width="358" height="367" loading="lazy" alt="Noiva de perfil junto à janela, com véu e vestido rendado">
+        <span class="cat-vertical">Casamentos</span>
+        <div class="cat-conteudo">
+          <span class="cat-icone">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg>
+          </span>
+          <h3>Casamentos</h3>
+          <p>Do preparativo ao último abraço: a história completa do dia mais esperado.</p>
+          <span class="cat-link">Ver fotos <em class="seta">&#8594;</em></span>
+        </div>
+      </article>
+
+      <article class="cat" data-cat="eventos" tabindex="0" role="button" aria-label="Ver fotos de Eventos">
+        <img src="assets/port-5.jpg" width="359" height="173" loading="lazy" alt="Criança sorrindo ao ar livre, em preto e branco">
+        <span class="cat-vertical">Eventos</span>
+        <div class="cat-conteudo">
+          <span class="cat-icone">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path d="M11.5 3.5l1.4 4.2a2 2 0 0 0 1.4 1.4l4.2 1.4-4.2 1.4a2 2 0 0 0-1.4 1.4l-1.4 4.2-1.4-4.2a2 2 0 0 0-1.4-1.4L4.5 10.5l4.2-1.4a2 2 0 0 0 1.4-1.4z"/><path d="M19 3v3M20.5 4.5h-3M5.5 17v2.5M6.75 18.25h-2.5"/></svg>
+          </span>
+          <h3>Eventos</h3>
+          <p>Festas, aniversários e celebrações registradas sem interferir no que importa.</p>
+          <span class="cat-link">Ver fotos <em class="seta">&#8594;</em></span>
+        </div>
+      </article>
+
+      <article class="cat" data-cat="outros" tabindex="0" role="button" aria-label="Ver fotos de Outros">
+        <img src="assets/port-7.jpg" width="359" height="173" loading="lazy" alt="Retrato feminino em preto e branco com luz lateral">
+        <span class="cat-vertical">Outros</span>
+        <div class="cat-conteudo">
+          <span class="cat-icone">
+            <svg viewBox="0 0 24 24" width="26" height="26"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.8" cy="8.8" r="1.8"/><path d="M21 15l-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+          </span>
+          <h3>Outros</h3>
+          <p>Retratos autorais, paisagens e trabalhos que nascem de um olhar livre.</p>
+          <span class="cat-link">Ver fotos <em class="seta">&#8594;</em></span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- galeria da categoria escolhida -->
+    <div class="galeria" id="galeria" hidden>
+      <div class="galeria-topo">
+        <button class="voltar" id="voltar">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path d="M15 5l-7 7 7 7"/></svg>
+          Todas as categorias
+        </button>
+        <p class="galeria-titulo"><b id="galeriaNome">Ensaios</b><span id="galeriaQtd">3 fotos</span></p>
+      </div>
+
+      <!-- esteira infinita de fotos da categoria -->
+      <div class="esteira" id="esteira">
+        <div class="esteira-trilho" id="esteiraTrilho"></div>
+      </div>
+
+      <p class="parede-dica">
+        <svg viewBox="0 0 24 24" width="15" height="15"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>
+        Clique na foto para ampliar
+      </p>
+
+    <div class="grade" id="grade">
+      <figure class="foto" data-cat="casamentos" data-src="assets/port-1.jpg" data-titulo="A espera da noiva" data-cat-nome="Casamentos">
+        <img src="assets/port-1.jpg" width="358" height="367" loading="lazy" alt="Noiva de perfil junto à janela, com véu e vestido rendado">
+        <figcaption class="foto-info"><span>Casamentos</span><b>A espera da noiva</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="outros" data-src="assets/port-2.jpg" data-titulo="Fim de tarde no rio" data-cat-nome="Outros">
+        <img src="assets/port-2.jpg" width="359" height="172" loading="lazy" alt="Pôr do sol sobre o rio visto de um mirante">
+        <figcaption class="foto-info"><span>Outros</span><b>Fim de tarde no rio</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="ensaios" data-src="assets/port-3.jpg" data-titulo="Dois no contraluz" data-cat-nome="Ensaios">
+        <img src="assets/port-3.jpg" width="359" height="172" loading="lazy" alt="Casal testa com testa contra o sol poente">
+        <figcaption class="foto-info"><span>Ensaios</span><b>Dois no contraluz</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="casamentos" data-src="assets/port-4.jpg" data-titulo="As alianças" data-cat-nome="Casamentos">
+        <img src="assets/port-4.jpg" width="359" height="172" loading="lazy" alt="Par de alianças douradas sobre superfície de madeira">
+        <figcaption class="foto-info"><span>Casamentos</span><b>As alianças</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="eventos" data-src="assets/port-5.jpg" data-titulo="Riso de criança" data-cat-nome="Eventos">
+        <img src="assets/port-5.jpg" width="359" height="173" loading="lazy" alt="Criança sorrindo ao ar livre, em preto e branco">
+        <figcaption class="foto-info"><span>Eventos</span><b>Riso de criança</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="ensaios" data-src="assets/port-6.jpg" data-titulo="À espera" data-cat-nome="Ensaios">
+        <img src="assets/port-6.jpg" width="359" height="173" loading="lazy" alt="Ensaio de gestante com as mãos sobre a barriga">
+        <figcaption class="foto-info"><span>Ensaios</span><b>À espera</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="outros" data-src="assets/port-7.jpg" data-titulo="Retrato em luz baixa" data-cat-nome="Outros">
+        <img src="assets/port-7.jpg" width="359" height="173" loading="lazy" alt="Retrato feminino em preto e branco com luz lateral">
+        <figcaption class="foto-info"><span>Outros</span><b>Retrato em luz baixa</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="ensaios" data-src="assets/plano-1.jpg" data-titulo="O fim da tarde a dois" data-cat-nome="Ensaios">
+        <img src="assets/plano-1.jpg" width="381" height="170" loading="lazy" alt="Casal abraçado observando o pôr do sol">
+        <figcaption class="foto-info"><span>Ensaios</span><b>O fim da tarde a dois</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="casamentos" data-src="assets/plano-2.jpg" data-titulo="Sob o véu" data-cat-nome="Casamentos">
+        <img src="assets/plano-2.jpg" width="388" height="158" loading="lazy" alt="Noivos sob o véu iluminados pelo sol">
+        <figcaption class="foto-info"><span>Casamentos</span><b>Sob o véu</b></figcaption>
+      </figure>
+
+      <figure class="foto" data-cat="outros" data-src="assets/plano-3.jpg" data-titulo="Retrato corporativo" data-cat-nome="Outros">
+        <img src="assets/plano-3.jpg" width="382" height="170" loading="lazy" alt="Ambiente corporativo com poltrona e notebook">
+        <figcaption class="foto-info"><span>Outros</span><b>Retrato corporativo</b></figcaption>
+      </figure>
+    </div>
+    </div>
+
+    <div class="centro acao rev">
+      <button class="btn" id="verMais"><span>Ver mais fotos <em class="seta">&#8594;</em></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANOS ============ -->
+<section class="sec planos" id="planos">
+  <div class="wrap">
+    <div class="topo centro rev">
+      <p class="eyebrow">Planos</p>
+      <div class="risco centro"></div>
+      <h2>Escolha o plano ideal<br>para a <span class="dourado">sua história.</span></h2>
+      <p class="texto">Cada momento é único, por isso oferecemos opções pensadas<br>para diferentes fases e necessidades.</p>
+    </div>
+
+    <div class="cards">
+      <!-- plano 1 -->
+      <article class="card rev">
+        <div class="card-foto"><img src="assets/plano-1.jpg" width="381" height="170" loading="lazy" alt="Casal abraçado observando o pôr do sol"></div>
+        <div class="card-corpo">
+          <h3>Ensaio Pessoal</h3>
+          <p class="sub">Registre quem você é</p>
+          <div class="risco-card"></div>
+          <p class="preco">R$ 450</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Ensaio de até 1 hora</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Até 30 fotos editadas</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Entrega digital em alta resolução</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Galeria online privada</li>
+          </ul>
+          <a href="#" class="btn btn-brilho" data-whats="Olá! Tenho interesse no plano Ensaio Pessoal (R$ 450). Pode me passar mais detalhes?"><span class="com-faisca">Quero este plano <i class="faisca" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></svg></i></span></a>
+        </div>
+      </article>
+
+      <!-- plano 2 -->
+      <article class="card destaque rev">
+        <span class="tag">Mais escolhido</span>
+        <div class="card-foto"><img src="assets/plano-2.jpg" width="388" height="158" loading="lazy" alt="Noivos sob o véu iluminados pelo sol"></div>
+        <div class="card-corpo">
+          <h3>Casamentos</h3>
+          <p class="sub">Histórias para sempre</p>
+          <div class="risco-card"></div>
+          <p class="preco">R$ 2.500</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Cobertura completa do evento</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Todas as fotos editadas</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Galeria online personalizada</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Prévia em até 72 horas</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Álbum opcional (sob consulta)</li>
+          </ul>
+          <a href="#" class="btn btn-cheio btn-brilho" data-whats="Olá! Tenho interesse no plano Casamentos (R$ 2.500). Podemos conversar sobre a data?"><span class="com-faisca">Quero este plano <i class="faisca" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></svg></i></span></a>
+        </div>
+      </article>
+
+      <!-- plano 3 -->
+      <article class="card rev">
+        <div class="card-foto"><img src="assets/plano-3.jpg" width="382" height="170" loading="lazy" alt="Ambiente corporativo com poltrona e notebook"></div>
+        <div class="card-corpo">
+          <h3>Ensaio Profissional</h3>
+          <p class="sub">Sua imagem, seu valor</p>
+          <div class="risco-card"></div>
+          <p class="preco">R$ 750</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Ensaio de até 2 horas</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Até 50 fotos editadas</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Direcionamento e consultoria</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Entrega digital em alta resolução</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.6 2.6L16 9.7"/></svg>Uso comercial das imagens</li>
+          </ul>
+          <a href="#" class="btn btn-brilho" data-whats="Olá! Tenho interesse no plano Ensaio Profissional (R$ 750). Pode me passar mais detalhes?"><span class="com-faisca">Quero este plano <i class="faisca" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></svg></i></span></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="planos-rodape rev">
+      <p>
+        <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        Ficou com dúvidas? Fale comigo e vamos encontrar o plano ideal para você.
+      </p>
+      <a href="#" class="btn" data-whats="Olá! Fiquei com uma dúvida sobre os planos e gostaria de conversar."><span>Entrar em contato <em class="seta">&#8594;</em></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="rev">
+        <p class="eyebrow">FAQ</p>
+        <div class="risco"></div>
+        <h2>Dúvidas<br><span class="dourado">frequentes.</span></h2>
+        <p class="texto">Reunimos aqui as principais perguntas para te ajudar a entender como funciona o meu trabalho. Se ainda ficar com alguma dúvida, é só me chamar.</p>
+        <a href="#" class="btn" data-whats="Olá! Vi o site e fiquei com uma dúvida, pode me ajudar?"><span>Falar comigo <em class="seta">&#8594;</em></span></a>
+      </div>
+
+      <div class="lista-faq rev" id="faqLista">
+        <div class="item">
+          <button class="pergunta">Como funciona o agendamento?<span class="mais"><i></i><i></i></span></button>
+          <div class="resposta"><p>É simples: você me chama pelo WhatsApp, conversamos sobre a sua ideia, o local e a data desejada. Depois confirmo a disponibilidade e reservo o seu horário na agenda mediante um sinal. A partir daí combinamos todos os detalhes com calma.</p></div>
+        </div>
+        <div class="item">
+          <button class="pergunta">Qual o prazo de entrega das fotos?<span class="mais"><i></i><i></i></span></button>
+          <div class="resposta"><p>Ensaios ficam prontos em até 15 dias e casamentos em até 30 dias após a data. Uma prévia com as primeiras imagens selecionadas é enviada em até 72 horas, para você já matar a vontade de ver o resultado.</p></div>
+        </div>
+        <div class="item">
+          <button class="pergunta">As fotos são todas editadas?<span class="mais"><i></i><i></i></span></button>
+          <div class="resposta"><p>Sim. Todas as imagens entregues passam por tratamento de cor, luz e enquadramento, respeitando a naturalidade da cena. Retoques mais detalhados podem ser feitos em fotos selecionadas, sob combinação.</p></div>
+        </div>
+        <div class="item">
+          <button class="pergunta">Posso escolher os locais da sessão?<span class="mais"><i></i><i></i></span></button>
+          <div class="resposta"><p>Com certeza. Você pode sugerir um lugar com significado para a sua história, e eu ajudo a avaliar a luz e o melhor horário. Se preferir, indico locações que já conheço e que funcionam muito bem para cada tipo de ensaio.</p></div>
+        </div>
+        <div class="item">
+          <button class="pergunta">Vocês atendem em outras cidades?<span class="mais"><i></i><i></i></span></button>
+          <div class="resposta"><p>Sim. Atendo Foz do Iguaçu e toda a região, e também viajo para outras cidades e estados. Para trabalhos fora da região, os custos de deslocamento e hospedagem são combinados previamente, sem surpresas.</p></div>
+        </div>
+        <div class="item">
+          <button class="pergunta">Como é feito o pagamento?<span class="mais"><i></i><i></i></span></button>
+          <div class="resposta"><p>A reserva da data é feita com um sinal e o restante pode ser parcelado até o dia do ensaio ou do evento. Aceito PIX, transferência e cartão de crédito. Tudo é registrado em contrato, para a segurança dos dois lados.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-base rev">
+      <div><i></i>Fotografia<br>que conecta pessoas</div>
+      <div><i></i>Mais que fotos,<br>histórias reais.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RODAPE ============ -->
+<footer id="contato">
+  <div class="wrap">
+    <div class="rodape-grid">
+      <div class="rodape-logo rev">
+        <div class="rodape-marca">
+          <b>AL<i>E</i>X</b>
+          <small>FOTOGRAFIA</small>
+        </div>
+        <p class="tagline">Mais que fotos,<br>histórias reais.</p>
+        <p class="texto" style="margin-top:26px">Registrando pessoas, momentos e sentimentos que realmente importam.</p>
+
+        <div class="redes">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" data-whats="Olá! Vim pelo site da Alex Fotografia." aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M21 11.6a8.9 8.9 0 0 1-13.2 7.8L3 21l1.7-4.6A8.9 8.9 0 1 1 21 11.6z"/><path d="M8.8 9.2c.3 2.6 3.4 5.7 6 6l1.2-1.5-2-1-1 .9c-1-.5-2.1-1.6-2.6-2.6l.9-1-1-2-1.5 1.2z"/></svg>
+          </a>
+          <a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M11.2 15.6c-.4 1.6-.9 3.1-1.9 4.1M12.4 6.6c-2.4 0-4.2 1.7-4.2 3.9 0 1 .5 2 1.3 2.4l.3-1.2c-.3-.4-.5-.9-.5-1.4 0-1.6 1.3-2.9 3-2.9 1.6 0 2.6 1 2.6 2.4 0 1.8-.8 3.3-2 3.3-.7 0-1.2-.6-1-1.3.2-.8.6-1.7.6-2.3 0-.5-.3-1-.9-1-.7 0-1.3.8-1.3 1.8 0 .7.2 1.1.2 1.1s-.8 3.5-1 4.1"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="rodape-col rev">
+        <h4>Navegação</h4><hr>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#planos">Serviços</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#portfolio">Depoimentos</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-col rev">
+        <h4>Contato</h4><hr>
+
+        <a class="contato-item" href="https://www.google.com/maps/search/?api=1&query=Foz+do+Igua%C3%A7u+PR" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="21" height="21"><path d="M12 21s7-5.5 7-10.5A7 7 0 0 0 5 10.5C5 15.5 12 21 12 21z"/><circle cx="12" cy="10.3" r="2.6"/></svg>
+          <span><b>Foz do Iguaçu – PR</b><span>Atendemos toda a região</span></span>
+        </a>
+
+        <a class="contato-item" href="mailto:contato@alexfotografia.com?subject=Contato%20pelo%20site">
+          <svg viewBox="0 0 24 24" width="21" height="21"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>
+          <span><b>contato@alexfotografia.com</b></span>
+        </a>
+
+        <a class="contato-item" href="#" data-whats="Olá! Vim pelo site da Alex Fotografia e gostaria de mais informações.">
+          <svg viewBox="0 0 24 24" width="21" height="21"><path d="M21 11.6a8.9 8.9 0 0 1-13.2 7.8L3 21l1.7-4.6A8.9 8.9 0 1 1 21 11.6z"/></svg>
+          <span><b>(45) 9 9999-9999</b><span>Atendimento rápido</span></span>
+        </a>
+
+        <a class="contato-item" href="#planos">
+          <svg viewBox="0 0 24 24" width="21" height="21"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <span><b>Agende seu ensaio</b></span>
+        </a>
+
+        <a href="#" class="btn" style="margin-top:8px" data-whats="Olá! Vim pelo site e gostaria de falar sobre um ensaio."><span>Fale comigo <em class="seta">&#8594;</em></span></a>
+      </div>
+
+      <div class="rodape-col news rev">
+        <h4>Receba novidades</h4><hr>
+        <p>Cadastre seu e-mail e receba conteúdos exclusivos, dicas de fotografia e novidades.</p>
+        <form id="formNews" novalidate>
+          <input type="email" id="emailNews" placeholder="Seu e-mail" aria-label="Seu e-mail">
+          <button type="submit" aria-label="Cadastrar e-mail">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h13M13 6.5l5.5 5.5L13 17.5"/></svg>
+          </button>
+        </form>
+        <p class="aviso" id="avisoNews"></p>
+
+        <p class="citacao">“Grandes histórias<br>merecem ser lembradas.”</p>
+        <hr>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <small>© <span id="ano">2024</span> Alex Fotografia. Todos os direitos reservados.</small>
+      <div class="palavras"><span>Pessoas</span><i>|</i><span>Momentos</span><i>|</i><span>Histórias</span></div>
+      <a href="#topo" class="topo-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19V5M6.5 10.5L12 5l5.5 5.5"/></svg>
+        Voltar ao topo
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da foto">
+  <button class="lb-btn lb-fechar" id="lbFechar" aria-label="Fechar">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-btn lb-ant" id="lbAnt" aria-label="Foto anterior">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M14.5 5L7.5 12l7 7"/></svg>
+  </button>
+  <button class="lb-btn lb-prox" id="lbProx" aria-label="Próxima foto">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9.5 5l7 7-7 7"/></svg>
+  </button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption><span id="lbCat"></span><b id="lbTitulo"></b></figcaption>
+  </figure>
+  <div class="lb-contador" id="lbContador"></div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var WHATS = '5545999999999';
+  var INSTA = 'https://instagram.com/';
+
+  /* ---------- botões de WhatsApp ---------- */
+  document.querySelectorAll('[data-whats]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      var msg = encodeURIComponent(el.getAttribute('data-whats'));
+      window.open('https://wa.me/' + WHATS + '?text=' + msg, '_blank', 'noopener');
+      fecharMenu();
+    });
+  });
+
+  /* ---------- pulso dourado no clique dos botões ----------
+     Marca o botão por 420ms, o tempo da animação do anel. Delegado no
+     documento, então botões criados depois (galeria, cenas) já nascem com ele. */
+  document.addEventListener('click', function (e) {
+    var botao = e.target.closest('.btn, .btn-cena');
+    if (!botao) return;
+    botao.setAttribute('data-state', 'clicked');
+    clearTimeout(botao._pulso);
+    botao._pulso = setTimeout(function () {
+      botao.removeAttribute('data-state');
+    }, 420);
+  }, true);
+
+  /* ---------- cabeçalho ---------- */
+  var header = document.getElementById('cabecalho');
+  var menu = document.getElementById('menu');
+  var burger = document.getElementById('burger');
+
+  function aoRolar() {
+    if (window.scrollY > 40) header.classList.add('solido');
+    else header.classList.remove('solido');
+    marcarSecaoAtiva();
+  }
+  window.addEventListener('scroll', aoRolar, { passive: true });
+
+  /* ---------- menu mobile ---------- */
+  function fecharMenu() {
+    document.body.classList.remove('menu-aberto');
+    burger.setAttribute('aria-expanded', 'false');
+  }
+  burger.addEventListener('click', function () {
+    var aberto = document.body.classList.toggle('menu-aberto');
+    burger.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', fecharMenu);
+  });
+
+  /* Esc fecha o menu do celular */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && document.body.classList.contains('menu-aberto')) fecharMenu();
+  });
+
+  /* ---------- link ativo conforme a rolagem ---------- */
+  var links = Array.prototype.slice.call(menu.querySelectorAll('a[href^="#"]'))
+    .filter(function (a) { return a.getAttribute('href').length > 1; });
+  var secoes = links.map(function (a) {
+    return document.querySelector(a.getAttribute('href'));
+  });
+
+  function marcarSecaoAtiva() {
+    var pos = window.scrollY + window.innerHeight * 0.32;
+    var atual = 0;
+    secoes.forEach(function (s, i) {
+      if (s && s.offsetTop <= pos) atual = i;
+    });
+    links.forEach(function (a, i) {
+      a.classList.toggle('ativo', i === atual && !a.classList.contains('btn'));
+    });
+  }
+
+  aoRolar();
+
+  /* ---------- cards expansivos + galeria por categoria ---------- */
+
+  /* as <figure class="foto"> do HTML são a fonte dos dados (e a versão sem JS) */
+  var FOTOS = Array.prototype.slice.call(document.querySelectorAll('.foto')).map(function (f) {
+    return {
+      src: f.getAttribute('data-src'),
+      alt: f.querySelector('img').alt,
+      /* as dimensões reais viajam junto: as imagens criadas em JS nascem
+         com a proporção declarada, sem reflow enquanto carregam */
+      w: f.querySelector('img').getAttribute('width'),
+      h: f.querySelector('img').getAttribute('height'),
+      titulo: f.getAttribute('data-titulo'),
+      cat: f.getAttribute('data-cat'),
+      catNome: f.getAttribute('data-cat-nome')
+    };
+  });
+  var listaAtual = [];
+  document.getElementById('grade').hidden = true;
+
+  var cats = Array.prototype.slice.call(document.querySelectorAll('.cat'));
+  var caixaCats = document.getElementById('cats');
+  var galeria = document.getElementById('galeria');
+  var galeriaNome = document.getElementById('galeriaNome');
+  var galeriaQtd = document.getElementById('galeriaQtd');
+  var secaoPortfolio = document.getElementById('portfolio');
+
+  function ativar(card) {
+    cats.forEach(function (c) { c.classList.toggle('ativo', c === card); });
+  }
+
+  function abrirCategoria(cat, nome) {
+    listaAtual = FOTOS.filter(function (f) { return f.cat === cat; });
+
+    galeriaNome.textContent = nome;
+    galeriaQtd.textContent = listaAtual.length + (listaAtual.length === 1 ? ' foto' : ' fotos');
+
+    caixaCats.hidden = true;
+    galeria.hidden = false;
+    montarEsteira(listaAtual);
+
+    var alvo = secaoPortfolio.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: alvo, behavior: 'smooth' });
+  }
+
+  function voltarCategorias() {
+    galeria.hidden = true;
+    caixaCats.hidden = false;
+    var alvo = secaoPortfolio.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: alvo, behavior: 'smooth' });
+  }
+
+  cats.forEach(function (card) {
+    card.addEventListener('mouseenter', function () { ativar(card); });
+    card.addEventListener('focus', function () { ativar(card); });
+
+    card.addEventListener('click', function () {
+      if (!card.classList.contains('ativo')) { ativar(card); return; }
+      abrirCategoria(card.getAttribute('data-cat'), card.querySelector('h3').textContent);
+    });
+
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        ativar(card);
+        abrirCategoria(card.getAttribute('data-cat'), card.querySelector('h3').textContent);
+      }
+    });
+  });
+
+  document.getElementById('voltar').addEventListener('click', voltarCategorias);
+
+  /* ---------- parede infinita arrastável (motor reutilizável) ----------
+     Cada parede monta um bloco de fotos e o repete em 2x2. Ao arrastar,
+     a posição é "envolvida" na metade da largura/altura do mosaico, então
+     o conteúdo nunca acaba e a emenda não aparece. */
+  function criarParede(elParede, opcoes) {
+    var cfg = opcoes || {};
+    var mover = elParede.querySelector('.parede-mover');
+
+    var px = 0, py = 0, vx = 0, vy = 0;
+    var cicloX = 0, cicloY = 0;
+    var arrastando = false, loopId = 0;
+    var ultimoX = 0, ultimoY = 0, percorrido = 0;
+    var colunasAtuais = 0;
+    var lista = [];
+
+    function colunas() {
+      var l = window.innerWidth;
+      if (l <= 760) return cfg.colunasCelular || 3;
+      if (l <= 1100) return cfg.colunasTablet || 4;
+      return cfg.colunas || 4;
+    }
+
+    function montar(novaLista) {
+      if (novaLista) lista = novaLista;
+      if (!lista.length) return;
+
+      colunasAtuais = colunas();
+      var porBloco = colunasAtuais * 2;
+
+      var molde = document.createDocumentFragment();
+      for (var i = 0; i < porBloco; i++) {
+        var dado = lista[i % lista.length];
+
+        var item = document.createElement('figure');
+        item.className = 'parede-item';
+        item.setAttribute('data-idx', i % lista.length);
+        item.style.transitionDelay = (Math.random() * 0.55).toFixed(2) + 's';
+
+        var img = document.createElement('img');
+        img.src = dado.src;
+        img.alt = dado.alt;
+        img.draggable = false;
+        if (dado.w) { img.width = dado.w; img.height = dado.h; }
+
+        var legenda = document.createElement('figcaption');
+        var cat = document.createElement('span');
+        cat.textContent = dado.catNome;
+        var titulo = document.createElement('b');
+        titulo.textContent = dado.titulo;
+        legenda.appendChild(cat);
+        legenda.appendChild(titulo);
+
+        item.appendChild(img);
+        item.appendChild(legenda);
+        molde.appendChild(item);
+      }
+
+      mover.textContent = '';
+      for (var b = 0; b < 4; b++) {
+        var bloco = document.createElement('div');
+        bloco.className = 'parede-bloco';
+        bloco.style.setProperty('--cols', colunasAtuais);
+        bloco.appendChild(molde.cloneNode(true));
+        mover.appendChild(bloco);
+      }
+
+      medir();
+      px = -cicloX / 2;
+      py = -cicloY / 2;
+      aplicar();
+
+      /* entrada das fotos, uma a uma */
+      requestAnimationFrame(function () {
+        var itens = mover.querySelectorAll('.parede-item');
+        for (var i = 0; i < itens.length; i++) itens[i].classList.add('entrou');
+      });
+      setTimeout(function () {
+        var itens = mover.querySelectorAll('.parede-item');
+        for (var i = 0; i < itens.length; i++) itens[i].classList.add('entrou');
+      }, 140);
+
+      if (cfg.deriva) ligarLoop();
+    }
+
+    function medir() {
+      var r = mover.getBoundingClientRect();
+      cicloX = r.width / 2;
+      cicloY = r.height / 2;
+    }
+
+    /* mantém o valor dentro de [-ciclo, 0), criando o efeito infinito */
+    function envolver(valor, ciclo) {
+      if (!ciclo) return valor;
+      return ((valor % ciclo) + ciclo) % ciclo - ciclo;
+    }
+
+    function aplicar() {
+      mover.style.transform = 'translate3d(' + px + 'px,' + py + 'px,0)';
+    }
+
+    function passo() {
+      loopId = 0;
+      if (!arrastando) {
+        px += vx;
+        py += vy;
+        vx *= 0.93;
+        vy *= 0.93;
+        if (Math.abs(vx) < 0.05) vx = 0;
+        if (Math.abs(vy) < 0.05) vy = 0;
+      }
+
+      /* deriva lenta e constante: a parede nunca fica parada */
+      if (cfg.deriva && !arrastando) px -= cfg.deriva;
+
+      px = envolver(px, cicloX);
+      py = envolver(py, cicloY);
+      aplicar();
+
+      if (arrastando || vx || vy || cfg.deriva) loopId = requestAnimationFrame(passo);
+    }
+
+    function ligarLoop() {
+      if (loopId) return;
+      loopId = requestAnimationFrame(passo);
+    }
+
+    /* se a página abrir em uma aba em segundo plano, o primeiro quadro nunca roda
+       e o laço ficaria parado para sempre; ao voltar a ficar visível, rearma */
+    function rearmar() {
+      if (loopId) { cancelAnimationFrame(loopId); loopId = 0; }
+      medir();
+      aplicar();
+      if (cfg.deriva || vx || vy) ligarLoop();
+    }
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) rearmar();
+    });
+
+    elParede.addEventListener('pointerdown', function (e) {
+      arrastando = true;
+      vx = vy = 0;
+      percorrido = 0;
+      ultimoX = e.clientX;
+      ultimoY = e.clientY;
+      try { elParede.setPointerCapture(e.pointerId); } catch (err) {}
+      ligarLoop();
+    });
+
+    elParede.addEventListener('pointermove', function (e) {
+      if (!arrastando) return;
+      var dx = e.clientX - ultimoX;
+      var dy = e.clientY - ultimoY;
+      ultimoX = e.clientX;
+      ultimoY = e.clientY;
+      px += dx;
+      py += dy;
+      vx = dx;
+      vy = dy;
+      percorrido += Math.abs(dx) + Math.abs(dy);
+    });
+
+    function soltar(e) {
+      if (!arrastando) return;
+      arrastando = false;
+      try { elParede.releasePointerCapture(e.pointerId); } catch (err) {}
+    }
+    elParede.addEventListener('pointerup', soltar);
+    elParede.addEventListener('pointercancel', soltar);
+
+    /* a roda só move a parede onde isso não prende a rolagem da página */
+    if (cfg.roda) {
+      elParede.addEventListener('wheel', function (e) {
+        e.preventDefault();
+        vy = Math.max(-70, Math.min(70, vy - e.deltaY * 0.3));
+        ligarLoop();
+      }, { passive: false });
+    }
+
+    /* clique curto abre a foto; arrasto longo não */
+    mover.addEventListener('click', function (e) {
+      if (percorrido > 8) return;
+      var item = e.target.closest('.parede-item');
+      if (!item) return;
+      abrirLightbox(lista, parseInt(item.getAttribute('data-idx'), 10));
+    });
+
+    window.addEventListener('resize', function () {
+      if (!lista.length || !elParede.offsetParent) return;
+      if (colunas() !== colunasAtuais) montar();
+      else { medir(); aplicar(); }
+    });
+
+    return { montar: montar, rearmar: rearmar };
+  }
+
+  /* paredes das cenas em tela cheia, entre as seções.
+     sem captura da roda e com deriva lenta, para não prender a rolagem */
+  var paredesCena = Array.prototype.slice.call(document.querySelectorAll('.parede-cena'))
+    .map(function (el) {
+      return criarParede(el, {
+        colunas: 5, colunasTablet: 4, colunasCelular: 3, deriva: 0.22
+      });
+    });
+
+  paredesCena.forEach(function (p) { p.montar(FOTOS); });
+
+  /* ---------- esteira infinita de fotos da categoria ----------
+     O trilho é montado com duas metades idênticas. A animação desliza
+     -50%, ou seja, exatamente uma metade, então quando ela reinicia a
+     fita já está na mesma imagem: o laço não tem emenda.
+     A metade é preenchida repetindo as fotos da categoria até cobrir a
+     faixa com folga — com três fotos a fita continua cheia. */
+  var esteira = document.getElementById('esteira');
+  var trilho = document.getElementById('esteiraTrilho');
+  var listaEsteira = [];
+
+  function criarItemEsteira(lista, indice) {
+    var dado = lista[indice];
+
+    var item = document.createElement('figure');
+    item.className = 'esteira-item';
+
+    var img = document.createElement('img');
+    img.src = dado.src;
+    img.alt = dado.alt;
+    img.loading = 'lazy';
+    img.draggable = false;
+    if (dado.w) { img.width = dado.w; img.height = dado.h; }
+
+    item.appendChild(img);
+    item.addEventListener('click', function () { abrirLightbox(lista, indice); });
+    return item;
+  }
+
+  function montarEsteira(lista) {
+    listaEsteira = lista;
+    trilho.style.animation = 'none';
+    trilho.textContent = '';
+    if (!lista.length) return;
+
+    var alvo = (esteira.offsetWidth || 1200) * 1.15;
+    var naMetade = 0;
+
+    /* preenche a primeira metade */
+    while (naMetade < lista.length || (trilho.scrollWidth < alvo && naMetade < 60)) {
+      trilho.appendChild(criarItemEsteira(lista, naMetade % lista.length));
+      naMetade++;
+    }
+
+    /* repete na mesma ordem: a segunda metade é cópia exata da primeira */
+    for (var k = 0; k < naMetade; k++) {
+      trilho.appendChild(criarItemEsteira(lista, k % lista.length));
+    }
+
+    /* velocidade constante em px/s, independente de quantas fotos entraram */
+    var larguraMetade = trilho.scrollWidth / 2;
+    var duracao = Math.max(14, larguraMetade / 55);
+    trilho.style.setProperty('--dur', duracao.toFixed(1) + 's');
+    trilho.style.animation = '';
+  }
+
+  var remontar;
+  window.addEventListener('resize', function () {
+    if (galeria.hidden || !listaEsteira.length) return;
+    clearTimeout(remontar);
+    remontar = setTimeout(function () { montarEsteira(listaEsteira); }, 200);
+  });
+
+  /* ---------- ver mais fotos ---------- */
+  document.getElementById('verMais').addEventListener('click', function () {
+    window.open(INSTA, '_blank', 'noopener');
+  });
+
+  /* ---------- lightbox ---------- */
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbTitulo = document.getElementById('lbTitulo');
+  var lbCat = document.getElementById('lbCat');
+  var lbContador = document.getElementById('lbContador');
+  var indice = 0;
+
+  /* o lightbox percorre as fotos da categoria aberta */
+  function mostrar(i) {
+    if (!listaAtual.length) return;
+    indice = (i + listaAtual.length) % listaAtual.length;
+    var f = listaAtual[indice];
+    lbImg.src = f.src;
+    lbImg.alt = f.alt;
+    lbTitulo.textContent = f.titulo;
+    lbCat.textContent = f.catNome;
+    lbContador.textContent = ('0' + (indice + 1)).slice(-2) + ' / ' + ('0' + listaAtual.length).slice(-2);
+  }
+
+  /* cada parede abre o lightbox com a própria lista */
+  function abrirLightbox(lista, i) {
+    listaAtual = lista;
+    mostrar(i);
+    lb.classList.add('on');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function fecharLb() {
+    lb.classList.remove('on');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lbFechar').addEventListener('click', fecharLb);
+  document.getElementById('lbAnt').addEventListener('click', function () { mostrar(indice - 1); });
+  document.getElementById('lbProx').addEventListener('click', function () { mostrar(indice + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) fecharLb(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('on')) return;
+    if (e.key === 'Escape') fecharLb();
+    if (e.key === 'ArrowLeft') mostrar(indice - 1);
+    if (e.key === 'ArrowRight') mostrar(indice + 1);
+  });
+
+  /* ---------- FAQ ---------- */
+  document.querySelectorAll('.pergunta').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.parentElement;
+      var resposta = item.querySelector('.resposta');
+      var jaAberto = item.classList.contains('aberto');
+
+      document.querySelectorAll('.item.aberto').forEach(function (o) {
+        o.classList.remove('aberto');
+        o.querySelector('.resposta').style.maxHeight = null;
+      });
+
+      if (!jaAberto) {
+        item.classList.add('aberto');
+        resposta.style.maxHeight = resposta.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---------- newsletter ---------- */
+  var form = document.getElementById('formNews');
+  var campo = document.getElementById('emailNews');
+  var aviso = document.getElementById('avisoNews');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var valor = campo.value.trim();
+    var valido = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(valor);
+
+    if (!valido) {
+      aviso.textContent = 'Digite um e-mail válido para continuar.';
+      aviso.classList.add('erro');
+      campo.focus();
+      return;
+    }
+
+    aviso.classList.remove('erro');
+    aviso.textContent = 'Pronto! Em breve você recebe nossas novidades.';
+    campo.value = '';
+    setTimeout(function () { aviso.textContent = ''; }, 6000);
+  });
+
+  /* ---------- ano do rodapé ---------- */
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  /* ---------- animação de entrada ---------- */
+  var alvos = Array.prototype.slice.call(document.querySelectorAll('.rev'));
+  alvos.forEach(function (el, i) { el.style.transitionDelay = (i % 4) * 90 + 'ms'; });
+
+  var agendado = false;
+  function revelar() {
+    agendado = false;
+    var limite = window.innerHeight - 60;
+    for (var i = alvos.length - 1; i >= 0; i--) {
+      var el = alvos[i];
+      if (el.getBoundingClientRect().top < limite) {
+        el.classList.add('visivel');
+        alvos.splice(i, 1);
+      }
+    }
+  }
+  function pedirRevelacao() {
+    if (agendado) return;
+    agendado = true;
+    requestAnimationFrame(revelar);
+  }
+
+  window.addEventListener('scroll', pedirRevelacao, { passive: true });
+  window.addEventListener('resize', pedirRevelacao);
+  window.addEventListener('load', pedirRevelacao);
+
+  /* espera um quadro para o estado inicial pintar e a transição acontecer;
+     o setTimeout é a rede de segurança para quando a aba abre em segundo plano
+     (nesse caso o requestAnimationFrame não roda) */
+  requestAnimationFrame(function () { requestAnimationFrame(revelar); });
+  setTimeout(revelar, 120);
+})();
+</script>
+</body>
+</html>
